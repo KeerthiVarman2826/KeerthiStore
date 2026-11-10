@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="store-page" data-page="cart">
+    <header class="store-header">
+        <nav class="store-nav" aria-label="Main navigation">
+            <a class="store-brand" href="index.html">Keerthi<span>Store</span></a>
+            <div class="store-nav-links">
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="orders.html" data-auth-link hidden>My orders</a>
+                <a href="admin.html" data-admin-link hidden>Manage store</a>
+                <a href="dashboard.html" data-auth-link hidden>Account</a>
+                <a href="#" data-logout-button data-auth-link hidden>Log out</a>
+                <a href="login.html" data-guest-link>Login</a>
+                <a href="register.html" data-guest-link>Register</a>
+            </div>
+        </nav>
+    </header>
+    <main class="store-container">
+        <section class="store-page-heading compact-heading">
+            <p class="store-kicker">YOUR SELECTION</p><h1>Your shopping cart</h1>
+        </section>
+        <p id="cart-message" class="store-message" role="status" aria-live="polite"></p>
+        <div class="cart-layout">
+            <section id="cart-items" class="cart-items" aria-label="Cart items"></section>
+            <aside class="summary-card">
+                <h2>Order summary</h2>
+                <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">₹0.00</strong></div>
+                <p class="summary-note">Shipping and applicable taxes are calculated at checkout.</p>
+                <a class="primary-link full-width" href="checkout.html" id="checkout-link">Proceed to checkout</a>
+                <a class="secondary-link full-width" href="products.html">Continue shopping</a>
+            </aside>
+        </div>
+    </main>
+    <script src="store.js" defer></script>
+</body>
+</html>

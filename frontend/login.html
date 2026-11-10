@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102747">
+    <title>Log in | KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <main class="login-layout">
+        <section class="login-card" aria-labelledby="login-title">
+            <a class="login-brand" href="index.html" aria-label="KeerthiStore home">
+                <span class="login-brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" fill="currentColor" opacity=".16"/>
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M11 12V8a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="m12 19 3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span>Keerthi<span class="login-brand-accent">Store</span></span>
+            </a>
+
+            <div class="login-heading">
+                <span class="login-kicker">WELCOME BACK</span>
+                <h1 id="login-title">Sign in to your account</h1>
+                <p>Your next great find is just around the corner.</p>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <div class="login-field">
+                    <label for="login-email">Email address</label>
+                    <div class="login-input-wrap">
+                        <svg class="login-field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="3.5" y="5" width="17" height="14" rx="3" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m5 7 7 5.5L19 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input
+                            id="login-email"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            maxlength="254"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="login-field">
+                    <label for="login-password">Password</label>
+                    <div class="login-input-wrap">
+                        <svg class="login-field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="4" y="10" width="16" height="11" rx="2.5" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            <path d="M12 14.5v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        <input
+                            id="login-password"
+                            name="password"
+                            type="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <button
+                            class="password-toggle"
+                            type="button"
+                            aria-label="Show password"
+                            aria-pressed="false"
+                            aria-controls="login-password"
+                        >
+                            <svg class="password-eye-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="2.7" stroke="currentColor" stroke-width="1.7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <p id="login-message" class="login-message" role="status" aria-live="polite"></p>
+
+                <button class="login-submit" type="submit">
+                    <span>Log in</span>
+                    <span class="login-submit-arrow" aria-hidden="true">→</span>
+                </button>
+            </form>
+
+            <p class="login-register-prompt">
+                New to KeerthiStore? <a href="register.html">Create an account</a>
+            </p>
+            <p class="login-note">Your account details are protected with secure sign-in.</p>
+        </section>
+
+        <div class="login-decoration login-decoration-one" aria-hidden="true"></div>
+        <div class="login-decoration login-decoration-two" aria-hidden="true"></div>
+        <div class="login-decoration login-decoration-three" aria-hidden="true"></div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

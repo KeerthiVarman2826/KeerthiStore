@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102747">
+    <title>Create an account | KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-page">
+    <main class="register-layout">
+        <aside class="register-showcase" aria-label="KeerthiStore shopping benefits">
+            <a class="register-brand register-brand-light" href="index.html" aria-label="KeerthiStore home">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" fill="currentColor" opacity=".18"/>
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M11 12V8a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="m12 19 3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span>Keerthi<span class="brand-accent">Store</span></span>
+            </a>
+
+            <div class="showcase-copy">
+                <span class="showcase-eyebrow">A better way to shop</span>
+                <h1>Good finds.<br>Great feeling.</h1>
+                <p>Create your account and make every shopping moment a little easier.</p>
+            </div>
+
+            <div class="showcase-card" aria-hidden="true">
+                <span class="showcase-card-icon">✦</span>
+                <div>
+                    <strong>Your next favorite is waiting.</strong>
+                    <span>Discover something you’ll love.</span>
+                </div>
+                <span class="showcase-sparkle">✧</span>
+            </div>
+            <span class="showcase-orb showcase-orb-one" aria-hidden="true"></span>
+            <span class="showcase-orb showcase-orb-two" aria-hidden="true"></span>
+        </aside>
+
+        <section class="register-panel" aria-labelledby="register-title">
+            <div class="register-card">
+                <a class="register-brand register-brand-mobile" href="index.html" aria-label="KeerthiStore home">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 32 32" fill="none">
+                            <path d="M5 10.5h22l-2 17H7l-2-17Z" fill="currentColor" opacity=".18"/>
+                            <path d="M5 10.5h22l-2 17H7l-2-17Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M11 12V8a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="m12 19 3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span>Keerthi<span class="brand-accent">Store</span></span>
+                </a>
+
+                <div class="register-heading">
+                    <span class="heading-kicker">JOIN THE COMMUNITY</span>
+                    <h2 id="register-title">Create your account</h2>
+                    <p>Sign up to get started with KeerthiStore.</p>
+                </div>
+
+                <form id="register-form" class="register-form">
+                    <div class="form-field">
+                        <label for="name">Full name</label>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Your full name"
+                            autocomplete="name"
+                            maxlength="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            maxlength="254"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+
+                    <button class="register-button" type="submit">
+                        <span>Create account</span>
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </button>
+                </form>
+
+                <p class="login-prompt">Already have an account? <a href="login.html">Log in</a></p>
+                <p class="register-footer">By creating an account, you’re ready for a better way to shop.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

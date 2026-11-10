@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102747">
+    <title>Your Dashboard | KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header">
+        <nav class="dashboard-nav" aria-label="Main navigation">
+            <a class="dashboard-brand" href="index.html" aria-label="KeerthiStore home">
+                <span class="dashboard-brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" fill="currentColor" opacity=".16"/>
+                        <path d="M5 10.5h22l-2 17H7l-2-17Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M11 12V8a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="m12 19 3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span>Keerthi<span class="dashboard-brand-accent">Store</span></span>
+            </a>
+
+            <div class="dashboard-nav-actions">
+                <a class="dashboard-home-link" href="products.html">Shop</a>
+                <a class="dashboard-home-link" href="cart.html">Cart</a>
+                <a class="dashboard-home-link" href="orders.html">My orders</a>
+                <a class="dashboard-home-link" href="admin.html" data-admin-link hidden>Manage store</a>
+                <a class="dashboard-home-link" href="index.html">Store home</a>
+                <button class="dashboard-logout dashboard-logout-nav" type="button">Log out</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="dashboard-welcome" aria-labelledby="dashboard-title">
+            <div class="dashboard-welcome-copy">
+                <span class="dashboard-eyebrow">YOUR ACCOUNT</span>
+                <h1 id="dashboard-title">Welcome to Dashboard!</h1>
+                <p>Good to see you, <strong id="dashboard-welcome-name">Loading...</strong></p>
+            </div>
+            <div class="welcome-art" aria-hidden="true">
+                <span class="welcome-art-circle"></span>
+                <span class="welcome-art-bag">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M12 23h40l-4 33H16l-4-33Z" fill="currentColor" opacity=".16"/>
+                        <path d="M12 23h40l-4 33H16l-4-33Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M23 25V17a9 9 0 0 1 18 0v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M25 38h14M32 31v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="welcome-art-sparkle sparkle-one">✦</span>
+                <span class="welcome-art-sparkle sparkle-two">✧</span>
+            </div>
+        </section>
+
+        <p id="dashboard-message" class="dashboard-message" role="status" aria-live="polite"></p>
+
+        <section class="dashboard-grid" aria-label="Account overview" aria-busy="true">
+            <article class="profile-card">
+                <div class="profile-card-top">
+                    <div class="profile-avatar" id="dashboard-avatar" aria-hidden="true">K</div>
+                    <span class="account-badge">
+                        <span class="account-badge-dot"></span>
+                        Account active
+                    </span>
+                </div>
+
+                <div class="profile-identity">
+                    <span class="dashboard-section-label">YOUR PROFILE</span>
+                    <h2 id="dashboard-user-name">Loading profile...</h2>
+                    <p id="dashboard-user-email">Please wait while we load your account details.</p>
+                </div>
+
+                <div class="profile-divider"></div>
+                <div class="profile-status-row">
+                    <span class="status-check" aria-hidden="true">✓</span>
+                    <div>
+                        <strong>Login status</strong>
+                        <span class="profile-login-status">Signed in</span>
+                    </div>
+                    <span class="status-indicator" aria-label="Online"></span>
+                </div>
+
+                <button class="dashboard-logout dashboard-logout-card" type="button">
+                    Log out of your account
+                    <span aria-hidden="true">→</span>
+                </button>
+            </article>
+
+            <article class="account-info-card">
+                <div class="account-info-heading">
+                    <span class="info-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="8" r="3.3" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M5 20v-1.6a5.4 5.4 0 0 1 5.4-5.4h3.2a5.4 5.4 0 0 1 5.4 5.4V20H5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <span class="dashboard-section-label">ACCOUNT OVERVIEW</span>
+                        <h2>Account Information</h2>
+                    </div>
+                </div>
+
+                <div class="account-detail">
+                    <span class="detail-label">Full name</span>
+                    <strong id="dashboard-info-name">Loading...</strong>
+                </div>
+                <div class="account-detail">
+                    <span class="detail-label">Email address</span>
+                    <strong id="dashboard-info-email">Loading...</strong>
+                </div>
+                <div class="account-security-note">
+                    <span class="security-lock" aria-hidden="true">✓</span>
+                    <p>Your profile is connected to your secure KeerthiStore account.</p>
+                </div>
+            </article>
+        </section>
+
+        <footer class="dashboard-footer">
+            <span>KeerthiStore</span>
+            <span>Your account, all in one place.</span>
+        </footer>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">KeerthiStore</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html" data-auth-link hidden>My orders</a>
+            <a href="admin.html" data-admin-link hidden>Manage store</a>
+            <a href="dashboard.html" data-auth-link hidden>Account</a>
+            <a href="#" data-logout-button data-auth-link hidden>Log out</a>
+            <a href="login.html" data-guest-link>Login</a>
+            <a href="register.html" data-guest-link>Register</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to KeerthiStore</h1>
+        <p>Find your favourite products at great prices.</p>
+        <button onclick="showMessage()">Explore Products</button>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <p id="products-message" class="store-message" role="status" aria-live="polite"></p>
+        <div id="product-list" class="product-grid">
+            <p>Loading products...</p>
+        </div>
+        <p><a href="products.html">Browse all products</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 KeerthiStore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="store.js" defer></script>
+</body>
+</html>

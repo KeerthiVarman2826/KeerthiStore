@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details | KeerthiStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="store-page" data-page="order-detail">
+    <header class="store-header">
+        <nav class="store-nav" aria-label="Main navigation">
+            <a class="store-brand" href="index.html">Keerthi<span>Store</span></a>
+            <div class="store-nav-links">
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="orders.html" data-auth-link hidden>My orders</a>
+                <a href="admin.html" data-admin-link hidden>Manage store</a>
+                <a href="dashboard.html" data-auth-link hidden>Account</a>
+                <a href="#" data-logout-button data-auth-link hidden>Log out</a>
+                <a href="login.html" data-guest-link>Login</a>
+                <a href="register.html" data-guest-link>Register</a>
+            </div>
+        </nav>
+    </header>
+    <main class="store-container">
+        <p id="order-message" class="store-message" role="status" aria-live="polite"></p>
+        <section id="order-detail" class="order-detail-card"></section>
+    </main>
+    <script src="store.js" defer></script>
+</body>
+</html>
